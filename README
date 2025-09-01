@@ -21,6 +21,6 @@ java:
 *java Calc t.expr
 
 python:
-*source venv/bin/activate (activar entorno virtual)
+*source venv/bin/activate (activar entorno virtual si lo requiere)
 *python3 main.py t.expr
 
