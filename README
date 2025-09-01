@@ -1,0 +1,26 @@
+CONTENIDO DE CALCULADORA:
+-Java:
+	-LabeledExpr.g4 
+	-Calc.java (programa principal)
+	-EvalVisitor.java (visitor del gramar para la calculadora)
+	-t.expr (archivo de input en la calculador)
+	… (demás archivos generados)
+-Python:
+	-LabeledExpr.g4
+	-main.py
+	-EvalVisitor.py
+	-t.expr (archivo de input calculadora)
+	… (demás archivos generados)
+	
+
+COMO EJECUTAR:
+java:
+*antlr4 -no-listener -visitor LabeledExpr.g4
+*javac Calc.java LabeledExpr*.java
+*cat t.expr
+*java Calc t.expr
+
+python:
+*source venv/bin/activate (activar entorno virtual)
+*python3 main.py t.expr
+
